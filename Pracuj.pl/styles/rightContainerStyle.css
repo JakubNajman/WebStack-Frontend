@@ -1,0 +1,62 @@
+/*---------------------------------------
+                RIGHT CONTAINER
+---------------------------------------*/
+.rightContainer {
+    display         : flex;
+    flex-direction  : column;
+    border          : 1px solid #dbd1d0;
+    font-family     : 'Recursive', sans-serif;
+    background-color: #ffffff;
+    box-shadow      : 1px 1px 3px 1px #0000005d;
+    overflow        : auto;
+}
+
+.rightContainer>*:first-child {
+    border-bottom: 1px solid #dbd1d0;
+}
+
+.rightContainer>*:first-child>div {
+    align-items     : center;
+    display         : flex;
+    margin          : 1.5rem 3rem 1.5rem 3rem;
+    padding-top     : 1rem;
+    padding-bottom  : 1rem;
+    justify-content : center;
+    border-radius   : 50px;
+    background-color: #ec476b;
+    color           : white;
+    text-align      : center;
+}
+
+.rightContainer>*:first-child>div:hover {
+    background-color: #eb718b;
+}
+
+.rightContainer>*:last-child {
+    align-items    : center;
+    display        : flex;
+    justify-content: space-evenly;
+}
+
+.rightContainer>*:last-child>*:nth-child(n+1) {
+    display        : flex;
+    width          : 10vw;
+    height         : 5vw;
+    align-items    : center;
+    justify-content: center;
+    font-weight    : 300;
+    color          : #a89f9e;
+}
+
+.rightContainer>*:last-child>*:nth-child(n+1):hover {
+    color : #1a4296;
+    cursor: pointer;
+}
+
+.rightContainer>*:last-child>*:nth-child(n+1)>*:last-child {
+    padding-left: 0.5rem;
+}
+
+.rightContainer>*:last-child>*:nth-child(n+2) {
+    border-left: 1px solid #dbd1d0;
+}

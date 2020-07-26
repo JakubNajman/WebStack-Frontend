@@ -1,0 +1,102 @@
+/*---------------------------------------
+                MAIN
+---------------------------------------*/
+.leftBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 17.5rem;
+    background-color: #0f78d3d7;
+    opacity: 0.97;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+.leftBarTitle{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.9375rem;
+    height: 3.125rem;
+}
+
+
+.leftBarTitle:hover{
+    border: 0.5px solid rgba(255, 255, 255, 0.146);
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+    background-color: rgba(19, 99, 196, 0.427);
+}
+
+.leftBarTitle>*:nth-child(2){
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+/*-------------------------------------------
+                    FOOTER
+--------------------------------------------*/
+
+.leftBarFooterIcons{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    right: calc(100vw - 17.5rem);
+    left:0;
+    padding: 1rem 0 1rem 0;
+    height: 2.4rem;
+}
+
+.leftBarFooterIcons>*:last-child{
+    margin-left: 1.1rem;
+}
+
+.leftBarFooterIcons>div{
+    padding: 0.7rem;
+    margin: 0;
+    border: 0.2px solid rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+.leftBarFooterIcons>div:hover{
+    background-color: #0363b7;;
+}
+
+.leftBarFooterIcons>.icon{
+    font-size: 1.6rem;
+}
+
+/*------------------------------------------
+                  FOLDERS
+------------------------------------------*/
+.foldersData{
+    margin-left: 3.3rem;
+    margin-bottom: 0.625rem;
+}
+
+.folderTitle{
+    display: flex;
+    justify-content: space-between;
+    width: 12.5rem;
+    margin-top: 0.9375rem;
+}
+
+/*------------------------------------------
+                  ACCOUNT
+-------------------------------------------*/
+.accountTitle{
+    margin-bottom: 1.23rem;
+}
+
+.accountTitle>*{
+   display: flex;
+   justify-content: space-between;
+   width: 12.5rem;
+}
+
+:root{
+    font-size: 12px;
+}
+

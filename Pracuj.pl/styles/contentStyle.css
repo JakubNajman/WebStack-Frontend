@@ -1,0 +1,131 @@
+/*---------------------------------------
+                BACKGROUND
+---------------------------------------*/
+.metaContent {
+    position       : fixed;
+    left           : 0;
+    right          : 0;
+    top            : 5.1rem;
+    bottom         : 0;
+    background     : linear-gradient(180deg, #41b0f0 15%, #f1f1f1 10%, #f1f1f1 25%, #f1f1f1 50%);
+    padding-top    : 2vw;
+    padding-left   : 5vw;
+    padding-right  : 5vw;
+    display        : flex;
+    justify-content: space-between;
+    overflow       : auto;
+    overflow-x     : hidden;
+}
+
+/*---------------------------------------
+                LEFT CONTAINER
+---------------------------------------*/
+/*-------COMPANY LOGO AND TITLE--------*/
+.leftContainer {
+    display       : flex;
+    flex-direction: column;
+    font-family   : 'Recursive', sans-serif;
+    
+}
+
+.infoContainer {
+    background-color: #ffffff;
+    display         : flex;
+    flex-direction  : column;
+    box-shadow    : 1px 1px 3px 1px #0000005d;
+    border-right: 1px solid #dbd1d0;
+}
+
+.infoContainer>*:first-child {
+    display      : flex;
+    border-bottom: 1px solid #dbd1d0;
+}
+
+.infoContainer>*:first-child>*:first-child {
+    padding     : 1.5rem;
+    border-right: 1px solid #dbd1d0;
+}
+
+.infoHeader {
+    padding-left: 2rem;
+    padding-top : 1.75rem;
+}
+
+.infoHeader>*:first-child {
+    padding-bottom: 1rem;
+    font-weight   : 600;
+    font-size     : 1.5rem;
+}
+
+.infoHeader>*:last-child {
+    align-items: center;
+    display    : flex;
+    font-size  : 0.75rem;
+}
+
+/*-------BLUE STRIPE--------*/
+.infoContainer>*:nth-child(2) {
+    display         : flex;
+    background-color: #1a4296;
+    justify-content : space-between;
+}
+
+.infoContainer>*:nth-child(2)>*:first-child {
+    display: flex;
+}
+
+.infoContainer>*:nth-child(2)>*:nth-child(2) {
+    display     : flex;
+    margin-right: auto;
+}
+
+.infoContainer>*:nth-child(2)>*:last-child {
+    display: flex;
+}
+
+.infoContainer>*:nth-child(2)>*:nth-child(2) {
+    display    : flex;
+    align-items: center;
+    margin-left: 2rem;
+    color      : #ffffff;
+}
+
+/*-------INFO GENERAL---------*/
+.infoGeneral {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    padding: 1vw 2vw 1vw 2vw;
+    font-family   : 'Recursive', sans-serif;
+    font-weight: 300;
+}
+.infoGeneral>*:nth-child(n+1){
+    display: flex;
+    justify-content: space-evenly;
+    width: 58vw;
+    height: 5vw;
+    align-items: center;
+}
+.infoTitle{
+    height: 5vw;
+    width: 29vw;
+    display: flex;
+    align-items: center;
+}
+.infoGeneral>*:last-child{
+    justify-content: left;
+}
+.infoTitle>*:last-child{
+    padding-left: 2vw;
+}
+.infoTitle>*:last-child{
+    font-weight: 300;
+}
+
+.infoTitle>*:first-child{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50px;
+    background-color: #bccbf3c4;
+    padding: 1vw;
+}

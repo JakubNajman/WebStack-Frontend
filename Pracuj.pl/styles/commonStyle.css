@@ -1,0 +1,39 @@
+.body {
+    font-family: 'Recursive', sans-serif;
+}
+
+.headerTitle {
+    font-weight: 400;
+    font-size  : 1.75rem;
+    color      : white;
+    cursor     : pointer;
+    font-family: 'Recursive', sans-serif;
+}
+
+.iconH:hover {
+    cursor: pointer;
+    color : #4858d7;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.aboutCompany:hover {
+    cursor       : pointer;
+    border-bottom: 0.1rem solid #4858d7;
+}
+
+.iconTitle {
+    color: #4858d7;
+    padding-left: 0.1vw;
+}
+
+/* .title:hover {
+    cursor: pointer;
+} */
+
+.qfix:hover {
+    cursor: pointer;
+    color : #4858d7;
+}

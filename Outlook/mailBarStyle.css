@@ -1,0 +1,148 @@
+/*------------------------------------------
+                  MAIN
+-------------------------------------------*/
+.mailBar{
+    position: fixed;
+    top: 0;
+    left: 17.5rem;
+    width: 30rem;
+    background-color: #fffffc;
+    bottom: 0;
+    border-right: 1.5px solid #c9c7c170;
+    border-left: 1.5px solid #c9c7c170;
+    display: flex;
+    flex-direction: column;
+}
+/*------------------------------------------
+                  HEADER
+-------------------------------------------*/
+.mailHeader{
+    display: flex;
+    align-items: center;
+    padding: 2.6rem 1.4rem;
+}
+
+.mailHeaderSearch{
+    border: 1px;
+    border-color: rgba(0, 0, 0, 0.167);
+    border-style: solid;
+    outline: none;
+    margin-right: 1.2rem;
+    width: 225px;
+}
+
+.mailHeaderSearch input{
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.searchIcon{
+    font-size: 1.1rem;
+    margin-left: 1.5rem;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.mailHeaderIcons{
+    position: absolute;
+    top: 2.7rem;
+    left: 25.5rem;
+    display: flex;
+    right: calc(100vw - 47.5rem);
+    margin-right: 1.6rem;
+    color: rgba(0, 0, 0, 0.733);
+}
+/*------------------------------------------
+                  ORG
+-------------------------------------------*/
+.mailOrg{
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    border-bottom: 0.3px solid #c9c7c1;
+    padding-bottom: 0.5rem;
+}
+
+.mailOrg>*:nth-child(n+1){
+    padding-bottom: 0.9rem;
+}
+
+.mailOrg>*:first-child{
+    color: #0f77d3;
+    border-bottom: 1.5px solid #0f77d3c4;
+    padding-bottom: 0.7rem;
+}
+
+.mailOrgTitle{
+    font-size: 1.35rem;
+    font-weight: bold;
+    padding: 0.2rem;
+}
+
+.mailOrgIconsRight{
+    position: absolute;
+    top: 7.7rem;
+    left: 21rem;
+    display: flex;
+    align-items: center;
+    right: calc(100vw - 47.5rem);
+    padding-right: 0.5rem;
+}
+
+/*------------------------------------------
+                  MAIL
+-------------------------------------------*/
+
+.mailContainer{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 13px;
+    border-bottom: 0.4px solid #c9c7c170;
+}
+
+.mailContainerDate{
+    display: flex;
+    align-items: center;
+    padding-left: 14rem;
+    margin-right: 0rem; 
+}
+
+.mailDate{
+    display: flex;
+    align-items: center;
+    padding-left: 0.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 13px;
+    border-bottom: 0.5px solid #c9c6c14e;
+    background-color: #f2f0e98f;
+}
+
+.mailContainer>*:nth-child(2)>*:nth-child(1){
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.mailContainer>*:nth-child(2)>*:nth-child(3){
+    font-weight: 200;
+}
+
+.mailContainer>*:nth-child(2)>*:nth-child(2).NonRead{
+    color: #0f77d3c4;
+    font-weight: bolder;
+}
+.mailContainer.NonReadContainer{
+    border-left: 3px solid rgba(0, 102, 255, 0.913);
+    background-color: rgb(247, 251, 255);
+}
+
+.Mails{
+    overflow: auto;
+}
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+} */

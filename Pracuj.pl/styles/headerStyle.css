@@ -1,0 +1,73 @@
+/*---------------------------------------
+                MAIN
+---------------------------------------*/
+.metaHeader {
+    display      : flex;
+    position     : fixed;
+    top          : 0;
+    left         : 0;
+    right        : 0;
+    height       : 5.1rem;
+    border-bottom: 2px solid #dbd1d0;
+    font-family  : 'Recursive', sans-serif;
+    font-weight  : 300;
+    box-shadow   : 1px 1px 3px 1px #0000005d;
+}
+
+.metaHeader>*:nth-child(2) {
+    display    : flex;
+    align-items: center;
+    margin-top : 2rem;
+}
+
+.metaHeader>*:last-child {
+    position   : absolute;
+    display    : flex;
+    right      : 0;
+    align-items: center;
+}
+
+.metaHeader>*:first-child {
+    position     : absolute;
+    margin-top   : 1.25rem;
+    margin-left  : 1.5rem;
+    padding      : 0.25rem 1rem 0.5rem 1rem;
+    background   : #3fc2f0;
+    background   : linear-gradient(90deg, #3fc2f0 0%, #535395 26%, #020024 100%);
+    border-radius: 50px;
+    box-shadow   : 1px 1px 3px 1px #0000005d;
+}
+
+.metaHeader>*:nth-child(2) {
+    position: absolute;
+    display : flex;
+    left    : 15rem;
+}
+
+.metaHeader>*:nth-child(2)>*:nth-child(n+2) {
+    margin-left: 3rem;
+    ;
+}
+
+.metaHeader>*:nth-child(2)>*:nth-child(n+1):hover {
+    cursor: pointer;
+    color : #4858d7;
+}
+
+.metaHeader>*:last-child>*:last-child {
+    padding         : 2rem 2rem 2rem 2rem;
+    background-color: #1a4296;
+    font-weight     : 400;
+    color           : white;
+}
+
+.metaHeader>*:last-child>*:last-child:hover {
+    background-color: #6673da;
+    cursor          : pointer;
+    color           : white;
+}
+
+.metaHeader>*:last-child>*:nth-child(3):hover {
+    cursor: pointer;
+    color : #4858d7;
+}
