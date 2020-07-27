@@ -1,0 +1,43 @@
+/*---CONTENT-POSITION---*/
+.metaContent {
+    position   : fixed;
+    top        : 5.1rem;
+    left       : 0;
+    right      : 0;
+    bottom     : 0;
+    font-family: 'Varta', sans-serif;
+    overflow   : auto;
+    overflow-x : hidden;
+}
+
+/*---SLIDER-POSITION-AND-STYLE---*/
+.metaContent>*:first-child {
+    background-image: url("slider1.jpg");
+    background-size : 102vw auto;
+    height          : auto;
+    max-width       : 100vw;
+    box-shadow      : inset 0px 0px 100px -5px #c5c4c4;
+    border-bottom   : 1px solid #b3aead;
+}
+
+.metaContent>*:first-child>*:first-child {
+    height    : auto;
+    max-width : 100vw;
+    visibility: hidden;
+}
+
+.metaContent>*:first-child>:nth-child(2) {
+    position : absolute;
+    top      : 21.25vw;
+    left     : 23.5vw;
+    padding  : 0.75vw 3vw 0.75vw 3vw;
+    border   : 1px solid #b3aead;
+    font-size: 1vw;
+}
+
+.metaContent>*:first-child>:nth-child(2):hover {
+    border          : none;
+    background-color: #b64545;
+    color           : #ffffff;
+    cursor          : pointer;
+}

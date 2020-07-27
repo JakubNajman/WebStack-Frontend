@@ -1,0 +1,109 @@
+/*---HEADER-POSITION---*/
+.metaHeader {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100vw;
+    height          : 5rem;
+    background-color: #ffffff;
+    border-bottom   : 1px solid #b3aead;
+    box-shadow      : 0.25px 0.25px 2px 0px #807c7c;
+    display         : flex;
+    justify-content : space-between;
+    font-family     : 'Varta', sans-serif;
+}
+
+/*---HEADER-ELEMENTS---*/
+.metaHeader>div:nth-child(n+1) {
+    display: flex;
+}
+
+.metaHeader>div:nth-child(n+2) {
+    align-items: center;
+}
+
+/*---LOGO---*/
+.metaHeader>div:first-child {
+    margin: 1.5rem 0 0 3rem;
+}
+
+.metaHeader>div:first-child>img {
+    max-width : 12rem;
+    max-height: 2rem;
+}
+
+.metaHeader>div:first-child>img:hover {
+    cursor: pointer;
+}
+
+/*---MENU---*/
+.metaHeader>div:nth-child(2) {
+    max-width      : 50vw;
+    justify-content: space-evenly;
+    margin         : auto;
+}
+
+.metaHeader>div:nth-child(2)>div:nth-child(n+1) {
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    white-space    : nowrap;
+}
+
+.metaHeader>div:nth-child(2)>div:nth-child(n+1):not(:last-child) {
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    white-space    : nowrap;
+    margin         : 0 2rem 0 0;
+}
+
+.metaHeader>div:nth-child(2)>div:nth-child(n+1)>div {
+    margin : 1.95rem 0 0.15rem 0;
+    padding: 0 0 1.6rem 0;
+}
+
+.metaHeader>div:nth-child(2)>div:nth-child(n+1)>div:hover {
+    margin       : 1.95rem 0 0 0;
+    border-bottom: 0.15rem solid #b64545;
+    cursor       : pointer;
+}
+
+/*---SEARCH&BUY---*/
+.metaHeader>div:last-child {
+    display: flex;
+}
+
+.metaHeader>div:last-child>div:first-child {
+    display: flex;
+}
+
+.metaHeader>div:last-child>div:first-child:hover {
+    cursor: pointer;
+}
+
+.metaHeader>div:last-child>div:last-child:hover {
+    cursor: pointer;
+}
+
+.metaHeader>div:last-child>div:first-child>div:nth-child(n+1) {
+    padding: 0 0 0 0.5rem;
+}
+
+.metaHeader>div:last-child>div:last-child {
+    margin   : 0 3rem 0 1.75rem;
+    padding  : 0.3rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.metaHeader>div:last-child>div:first-child>div:last-child {
+    font-size: 0.5rem;
+    padding  : 0.45rem 0 0 0.4rem;
+}
+
+.metaHeader>div:last-child>div:first-child>div.fa:not(:nth-child(3)) {
+    padding: 0.15rem 0 0 0;
+    font-size: 2rem;
+}
